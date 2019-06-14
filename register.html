@@ -4,13 +4,51 @@
 		<meta charset="utf-8">
 		<title>Styles Conference Registration</title>
 		<link rel="stylesheet" href="assets/stylesheets/main.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
 	</head>
 	<body>
 
-		<header>
-			<a href="index.html">Styles Conference</a>
-			<h1>register here!</h1>
+		<header class="primary-header container group">
+			<h1 class="logo">
+				<a href="index.html">Styles <br> Conference</a>
+			</h1>
+			<h3 class="tagline">August 24&ndash;26th &mdash; Chicago, IL</h3>
+			<nav class="nav primary-nav">
+  				<ul>
+   					<li><a href="index.html">Home</a></li><!--
+    				--><li><a href="speakers.html">Speakers</a></li><!--
+    				--><li><a href="schedule.html">Schedule</a></li><!--
+    				--><li><a href="venue.html">Venue</a></li><!--
+    				--><li><a href="register.html">Register</a></li>
+  				</ul>
+			</nav>
 		</header>
+
+		<section class="row-alt">
+			<section class="lead container">
+			<p> REGISTER HERE</p>
+			</section>
+
+			<form action="welcome.php" method="post">
+			Name: <input type="text" name="name"><br>
+			E-mail: <input type="text" name="email"><br>
+			<input type="submit">
+			</form>
+		</section>
+
+		<footer class="primary-footer container group">
+			<small>&copy; Styles Conference</small>
+			<nav class="nav primary-nav">
+  				<ul>
+   					<li><a href="index.html">Home</a></li><!--
+    				--><li><a href="speakers.html">Speakers</a></li><!--
+    				--><li><a href="schedule.html">Schedule</a></li><!--
+    				--><li><a href="venue.html">Venue</a></li><!--
+    				--><li><a href="register.html">Register</a></li>
+  				</ul>
+			</nav>
+		</footer>
+
 	</body>
 
 </html>

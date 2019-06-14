@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="utf-8">
-		<title>Styles Conference Venue</title>
+		<title>Styles Conference</title>
 		<link rel="stylesheet" href="assets/stylesheets/main.css">
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
 	</head>
+
 	<body>
 
 		<header class="primary-header container group">
@@ -24,28 +25,30 @@
 			</nav>
 		</header>
 
+		<?php  
+		$info = $_POST["name"];
+		$email = $_POST["email"];
+		$info .= ", ";
+		$info .= $email;
+		$info .= "\n";
+
+		$fp = fopen("register.txt", 'a+');
+		fwrite($fp, $info);
+		fclose($fp);
+		?>
+
+
 		<section class="row-alt">
   			<div class="lead container">
 
-    			<h1>Venue</h1>
-
-    			<p>This is the amazing venue.</p>
+    			<h1>Thank you for registering!</h1>
+    			<h3>
+    				<a href="index.html">Return to Homepage</a>
+    			</h3>
+    			
   
   			</div>
-  		</section>
-
-		<footer class="primary-footer container group">
-			<small>&copy; Styles Conference</small>
-			<nav class="nav primary-nav">
-  				<ul>
-   					<li><a href="index.html">Home</a></li><!--
-    				--><li><a href="speakers.html">Speakers</a></li><!--
-    				--><li><a href="schedule.html">Schedule</a></li><!--
-    				--><li><a href="venue.html">Venue</a></li><!--
-    				--><li><a href="register.html">Register</a></li>
-  				</ul>
-			</nav>
-		</footer>
+		</section>		
 
 	</body>
 

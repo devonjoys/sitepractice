@@ -1,0 +1,5 @@
+mario, mario@mario.bros
+luigi, luigi@mario.bros
+Hello, youBet
+cyber, pizza@pizza.com
+gumby, gum.by@silly.gov
